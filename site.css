@@ -1,0 +1,72 @@
+/*CSS that applies to every page to keep uniform style*/
+
+/* fonts */
+
+@font-face {
+    font-family: rowVaticano;
+    src: url(./fonts/);
+}
+
+/*--- Page ---*/
+
+body{
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*--- header ---*/
+#header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: max-content auto;
+    
+}
+#header-horiz{
+    display: grid;
+    grid-template-rows: auto max-content;
+    /* background-color: aqua; */
+    height: 100px;
+}
+#header #logo {
+    height: 100px;
+    padding-right: 3px;
+}
+#header-text {
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    font-size: 62px;
+}
+
+/* top bar */
+#topbar a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    /* transition: transform 0.1s; */
+}
+/* #topbar a:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+} */
+
+/* For the Top Bar insert */
+#topbar {
+    display: grid;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    
+}
+
+#topbar div {
+    padding: 6px;
+    border-radius: 10px;
+    
+}
+
+#topbar div:hover {
+    background-color: rgb(211, 211, 211);
+    
+}
