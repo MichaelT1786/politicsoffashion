@@ -3,8 +3,8 @@
 /* fonts */
 
 @font-face {
-    font-family: rowVaticano;
-    src: url(./fonts/);
+    font-family: "rowVaticano";
+    src: url("fonts/row-vaticano/RowVatikanoBlack-6R42o.ttf");
 }
 
 /*--- Page ---*/
@@ -31,28 +31,18 @@ body{
 }
 #header #logo {
     height: 100px;
-    padding-right: 3px;
+    padding-right: 10px;
 }
 #header-text {
-    text-align: right;
+    text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 62px;
+    padding-bottom: 5px;
+    font-size: 50px;
+    font-family: "rowVaticano";
 }
 
 /* top bar */
-#topbar a {
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    /* transition: transform 0.1s; */
-}
-/* #topbar a:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-} */
-
-/* For the Top Bar insert */
 #topbar {
     display: grid;
     background-color: rgb(239, 239, 239);
@@ -60,13 +50,28 @@ body{
     
 }
 
+#topbar a {
+    color: black;
+    text-decoration: none;
+    /* transition: transform 0.1s; */
+}
+/* #topbar a:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+} */
+
 #topbar div {
     padding: 6px;
+    /* padding-top: 8px; */
     border-radius: 10px;
+    text-align: center;
+    /* font-size: 10px; */
+    /* font-family: "rowVaticano"; */
+    /* font-family: sans-serif; */
     
 }
 
 #topbar div:hover {
     background-color: rgb(211, 211, 211);
-    
+    font-weight: bold;
 }
